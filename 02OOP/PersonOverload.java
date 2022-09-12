@@ -1,7 +1,7 @@
 public class PersonOverload {
     public static void main(String[] args) {
-        Person ming = new Person();
-        Person hong = new Person();
+        Person2 ming = new Person2();
+        Person2 hong = new Person2();
         ming.setName("Xiao Ming");
         // TODO: 给Person增加重载方法setName(String, String):
         hong.setName("Xiao", "Hong");
@@ -10,7 +10,7 @@ public class PersonOverload {
     }
 }
 
-class Person {
+class Person2 {
     private String name;
 
     public String getName() {

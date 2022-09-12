@@ -4,7 +4,7 @@ import java.beans.PropertyDescriptor;
 
 public class BeanDemo {
     public static void main(String[] args) throws Exception {
-        BeanInfo info = Introspector.getBeanInfo(Person.class);
+        BeanInfo info = Introspector.getBeanInfo(Person1.class);
         for (PropertyDescriptor pd : info.getPropertyDescriptors()) {
             System.out.println(pd.getName());
             System.out.println("  " + pd.getReadMethod());
@@ -13,7 +13,7 @@ public class BeanDemo {
     }
 }
 
-class Person {
+class Person1 {
     private String name;
     private int age;
 
