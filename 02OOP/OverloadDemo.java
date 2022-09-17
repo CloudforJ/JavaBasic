@@ -1,4 +1,4 @@
-public class OverloadTest {
+public class OverloadDemo {
     public static void main(String[] args) {
         String s = "Test string";
         int n1 = s.indexOf('t');

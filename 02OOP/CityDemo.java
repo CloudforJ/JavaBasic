@@ -1,4 +1,4 @@
-public class CityTest {
+public class CityDemo {
     public static void main(String[] args) {
         City bj = new City();
         bj.name = "Beijing";
