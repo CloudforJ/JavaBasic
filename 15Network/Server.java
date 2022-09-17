@@ -3,7 +3,7 @@ import java.io.*;
 import java.net.*;
 public class Server {
     public static void main(String[] args) throws IOException {
-        ServerSocket ss = new ServerSocket(6666); // 监听指定端口
+        ServerSocket ss = new ServerSocket(6666); // listen the port
         System.out.println("server is running...");
         for (;;) {
             Socket sock = ss.accept();

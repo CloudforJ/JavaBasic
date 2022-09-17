@@ -4,7 +4,7 @@ import java.net.*;
 import java.util.*;
 public class Client {
     public static void main(String[] args) throws IOException {
-        Socket sock = new Socket("localhost", 6666); // 连接指定服务器和端口
+        Socket sock = new Socket("localhost", 6666); // connect host and port
         try (InputStream input = sock.getInputStream()) {
             try (OutputStream output = sock.getOutputStream()) {
                 handle(input, output);
@@ -20,8 +20,8 @@ public class Client {
         Scanner scanner = new Scanner(System.in);
         System.out.println("[server] " + reader.readLine());
         for (;;) {
-            System.out.print(">>> "); // 打印提示
-            String s = scanner.nextLine(); // 读取一行输入
+            System.out.print(">>> "); // print reminder info
+            String s = scanner.nextLine(); // read the input
             writer.write(s);
             writer.newLine();
             writer.flush();
