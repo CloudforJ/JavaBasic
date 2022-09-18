@@ -1,13 +1,13 @@
 public class PersonDemo {
     public static void main(String[] args) {
-        Person001 ming = new Person001();
+        Person1 ming = new Person1();
         ming.setName("xiaoming");
         ming.setAge(18);
         System.out.println(ming.getName() + " " + ming.getAge());
     }
 }
 
-class Person001 {
+class Person1 {
     private String name;
     private int age;
 
